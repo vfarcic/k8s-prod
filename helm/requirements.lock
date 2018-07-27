@@ -1,0 +1,9 @@
+dependencies:
+- name: chartmuseum
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 1.6.0
+- name: jenkins
+  repository: https://kubernetes-charts.storage.googleapis.com/
+  version: 0.16.6
+digest: sha256:84f76c2c1aff8b31af53d1148c62d0e626e122783a2fcefd153913592163b178
+generated: 2018-07-27T22:30:28.427855001+02:00
