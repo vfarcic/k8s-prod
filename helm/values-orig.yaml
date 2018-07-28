@@ -31,6 +31,7 @@ jenkins:
     ServiceType: ClusterIP
     ServiceAnnotations:
       service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
+    GlobalLibraries: true
     InstallPlugins:
     - blueocean:1.6.2
     - credentials:2.1.17
@@ -62,5 +63,9 @@ jenkins:
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
     HostName: jenkins.acme.com # Change me!
+    CustomConfigMap: true
+    CredentialsXmlSecret: jenkins-credentials
+    SecretsFilesSecret: jenkins-secrets
+    DockerVM: false
   rbac:
     install: true
