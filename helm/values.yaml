@@ -23,6 +23,7 @@ chartmuseum:
     hosts:
       cm.192.168.0.189.nip.io: # Change me!
       - /
+
 jenkins:
   Master:
     ImageTag: "2.129-alpine"
@@ -69,6 +70,3 @@ jenkins:
     DockerVM: false
   rbac:
     install: true
-go-demo-5:
-  image:
-    tag: latest # Change me!

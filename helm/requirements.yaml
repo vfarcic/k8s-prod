@@ -1,10 +1,7 @@
 dependencies:
 - name: chartmuseum
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: "@stable"
   version: 1.6.0
 - name: jenkins
-  repository: https://kubernetes-charts.storage.googleapis.com/
+  repository: "@stable"
   version: 0.16.6
-- name: go-demo-5
-  repository: http://cm.192.168.0.189.nip.io/api/charts
-  version: 0.0.1

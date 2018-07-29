@@ -23,6 +23,7 @@ chartmuseum:
     hosts:
       cm.acme-escaped.com: # Change me!
       - /
+
 jenkins:
   Master:
     ImageTag: "2.129-alpine"
@@ -69,6 +70,8 @@ jenkins:
     DockerVM: false
   rbac:
     install: true
-go-demo-5:
-  image:
-    tag: go-demo-5-tag # Change me!
+# go-demo-5:
+#   image:
+#     tag: latest
+#   ingress:
+#     host: go-demo-5.acme.com
