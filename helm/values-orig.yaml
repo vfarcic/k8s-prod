@@ -69,3 +69,6 @@ jenkins:
     DockerVM: false
   rbac:
     install: true
+go-demo-5:
+  image:
+    tag: go-demo-5-tag # Change me!
