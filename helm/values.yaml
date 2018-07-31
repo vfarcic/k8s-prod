@@ -21,7 +21,7 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.192.168.0.189.nip.io: # Change me!
+      cm.192.168.12.247.nip.io: # Change me!
       - /
 
 jenkins:
@@ -63,7 +63,7 @@ jenkins:
         ingress.kubernetes.io/ssl-redirect: "false"
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
-    HostName: jenkins.192.168.0.189.nip.io # Change me!
+    HostName: jenkins.192.168.12.247.nip.io # Change me!
     CustomConfigMap: true
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
@@ -72,4 +72,4 @@ jenkins:
     install: true
 go-demo-5:
   ingress:
-    host: go-demo-5.192.168.0.189.nip.io
+    host: go-demo-5.192.168.12.247.nip.io
