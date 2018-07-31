@@ -70,8 +70,6 @@ jenkins:
     DockerVM: false
   rbac:
     install: true
-# go-demo-5:
-#   image:
-#     tag: latest
-#   ingress:
-#     host: go-demo-5.192.168.0.189.nip.io
+go-demo-5:
+  ingress:
+    host: go-demo-5.192.168.0.189.nip.io
