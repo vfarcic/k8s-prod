@@ -13,7 +13,7 @@ pipeline {
     }      
   }
   environment {
-    cmAddr = "cm.192.168.12.247.nip.io"
+    cmAddr = "cm.acme.com"
   }
   stages {
     stage("deploy") {
