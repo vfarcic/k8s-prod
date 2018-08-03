@@ -32,8 +32,8 @@ spec:
       memory: 250Mi
       cpu: 0.1
     max:
-      memory: 500Mi
-      cpu: 0.5
+      memory: 1Gi
+      cpu: 1.0
     min:
       memory: 10Mi
       cpu: 0.05
