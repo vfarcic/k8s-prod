@@ -23,8 +23,8 @@ pipeline {
       }
       steps {
         container("helm") {
-          sh "env"
-          sh "helm repo add chartmuseum http://${cmAddr} --username admin --password admin"
+          sh "sleep 10000000000"
+          sh "helm repo add chartmuseum http://${cmAddr} --username ${cmCreds_USR} --password ${cmCreds_PSW}"
           sh "helm repo update"
           sh "helm upgrade prod helm --namespace prod"
         }
