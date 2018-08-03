@@ -14,6 +14,7 @@ pipeline {
   }
   environment {
     cmAddr = "cm.192.168.12.247.nip.io"
+    cmCreds = credentials('chartmuseum') 
   }
   stages {
     stage("deploy") {
@@ -22,6 +23,9 @@ pipeline {
       }
       steps {
         container("helm") {
+          sh "env"
+          sh "helm repo add chartmuseum http://${cmAddr} --username admin --password admin"
+          sh "helm repo update"
           sh "helm upgrade prod helm --namespace prod"
         }
       }
