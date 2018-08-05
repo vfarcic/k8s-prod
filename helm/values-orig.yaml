@@ -2,6 +2,7 @@ chartmuseum:
   env:
     open:
       DISABLE_API: false
+      AUTH_ANONYMOUS_GET: true
     secret:
       BASIC_AUTH_USER: admin # Change me!
       BASIC_AUTH_PASS: admin # Change me!

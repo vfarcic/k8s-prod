@@ -25,6 +25,7 @@ pipeline {
         container("helm") {
           sh "sleep 1000000"
           sh "helm repo add chartmuseum http://${cmAddr} --username ${cmCreds_USR} --password ${cmCreds_PSW}"
+          sh "helm fetch -d helm/charts --version $VERSION chartmuseum/go-demo-5"
           sh "helm repo update"
           sh "helm upgrade prod helm --namespace prod"
         }
