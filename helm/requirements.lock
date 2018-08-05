@@ -5,8 +5,5 @@ dependencies:
 - name: jenkins
   repository: https://kubernetes-charts.storage.googleapis.com
   version: 0.16.6
-- name: go-demo-5
-  repository: http://cm.192.168.0.189.nip.io
-  version: 0.0.4
-digest: sha256:57af34b664da11553a6c1202f8d0d1129f160b5d392c4d12e4dab22ddeee0d7e
-generated: 2018-08-06T00:59:58.256677058+02:00
+digest: sha256:92e6c5f53facba34d4753e5c72bffec6358cdb8491508d5d5591934106913152
+generated: 2018-08-06T01:31:35.534988374+02:00
