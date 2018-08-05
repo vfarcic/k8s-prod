@@ -13,7 +13,7 @@ pipeline {
     }      
   }
   environment {
-    cmAddr = "cm.192.168.12.247.nip.io"
+    cmAddr = "cm.192.168.1.34.nip.io"
     cmCreds = credentials('chartmuseum') 
   }
   stages {
@@ -23,7 +23,6 @@ pipeline {
       }
       steps {
         container("helm") {
-          sh "sleep 10000000000"
           sh "helm repo add chartmuseum http://${cmAddr} --username ${cmCreds_USR} --password ${cmCreds_PSW}"
           sh "helm repo update"
           sh "helm upgrade prod helm --namespace prod"
