@@ -34,6 +34,7 @@ jenkins:
       service.beta.kubernetes.io/aws-load-balancer-backend-protocol: http
     GlobalLibraries: true
     InstallPlugins:
+    - durable-task:1.22
     - blueocean:1.7.1
     - credentials:2.1.18
     - ec2:1.39
@@ -70,6 +71,3 @@ jenkins:
     DockerVM: false
   rbac:
     install: true
-go-demo-5:
-  ingress:
-    host: go-demo-5.192.168.1.34.nip.io
