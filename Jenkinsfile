@@ -26,7 +26,7 @@ pipeline {
           sh "helm repo add chartmuseum http://${cmAddr}"
           sh "helm repo update"
           sh "helm dependency update helm"
-          sh "helm upgrade prod helm -i --namespace prod --reuse-values"
+          sh "helm upgrade -i prod helm --namespace prod --reuse-values"
         }
       }
     }
