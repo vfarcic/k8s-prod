@@ -23,9 +23,10 @@ pipeline {
       }
       steps {
         container("helm") {
-          sh "helm repo add chartmuseum http://${cmAddr} --username ${cmCreds_USR} --password ${cmCreds_PSW}"
+          sh "helm repo add chartmuseum http://${cmAddr}"
           sh "helm repo update"
-          sh "helm upgrade prod helm --namespace prod"
+          sh "helm dependency update helm"
+          sh "helm upgrade prod helm -i --namespace prod --reuse-values"
         }
       }
     }
