@@ -13,7 +13,7 @@ pipeline {
     }      
   }
   environment {
-    cmAddr = "cm.192.168.0.189.nip.io"
+    cmAddr = "cm.192.168.99.100.nip.io"
     cmCreds = credentials('chartmuseum') 
   }
   stages {
