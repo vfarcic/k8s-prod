@@ -9,6 +9,7 @@ pipeline {
     kubernetes {
       cloud "kubernetes"
       label "prod"
+      serviceAccount "build"
       yamlFile "KubernetesPod.yaml"
     }      
   }
