@@ -16,3 +16,19 @@ roleRef:
 subjects:
 - kind: ServiceAccount
   name: build
+
+---
+
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: build
+  namespace: kube-system
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: admin
+subjects:
+- kind: ServiceAccount
+  name: build
+  namespace: {{ .Release.Namespace }}
