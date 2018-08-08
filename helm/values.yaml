@@ -22,7 +22,7 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.18.216.139.138.nip.io: # Change me!
+      cm.18.219.191.38.nip.io: # Change me!
       - /
 
 jenkins:
@@ -66,7 +66,7 @@ jenkins:
         ingress.kubernetes.io/ssl-redirect: "false"
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
-    HostName: jenkins.18.216.139.138.nip.io # Change me!
+    HostName: jenkins.18.219.191.38.nip.io # Change me!
     CustomConfigMap: true
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
