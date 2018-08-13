@@ -15,7 +15,6 @@ pipeline {
   }
   environment {
     cmAddr = "cm.acme.com"
-    cmCreds = credentials('chartmuseum') 
   }
   stages {
     stage("deploy") {
