@@ -30,7 +30,7 @@ pipeline {
           sh "helm upgrade -i prod helm --namespace prod --force"
         }
         container("oc") {
-          sh """oc -n prod create route edge --service prod-go-demo-5 --insecure-policy Allow --hostname go-demo-5.${addr}"""
+          sh "oc -n prod create route edge --service prod-go-demo-5 --insecure-policy Allow --hostname go-demo-5.${addr}"
         }
       }
     }
