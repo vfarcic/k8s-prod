@@ -5,3 +5,6 @@ dependencies:
 - name: jenkins
   repository: "@stable"
   version: 0.16.6
+- name: go-demo-5
+  repository: "@chartmuseum"
+  version: 0.0.1
