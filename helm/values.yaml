@@ -22,7 +22,7 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.35.237.218.235.nip.io: # Change me!
+      cm.34.210.146.155.nip.io: # Change me!
       - /
 
 jenkins:
@@ -66,13 +66,10 @@ jenkins:
         ingress.kubernetes.io/ssl-redirect: "false"
         ingress.kubernetes.io/proxy-body-size: 50m
         ingress.kubernetes.io/proxy-request-buffering: "off"
-    HostName: jenkins.35.237.218.235.nip.io # Change me!
+    HostName: jenkins.34.210.146.155.nip.io # Change me!
     CustomConfigMap: true
     CredentialsXmlSecret: jenkins-credentials
     SecretsFilesSecret: jenkins-secrets
     DockerVM: false
   rbac:
     install: true
-go-demo-5:
-  ingress:
-    host: go-demo-5.35.237.218.235.nip.io
