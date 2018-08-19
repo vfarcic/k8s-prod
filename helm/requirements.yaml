@@ -4,4 +4,4 @@ dependencies:
   version: 1.6.0
 - name: jenkins
   repository: "@stable"
-  version: 0.16.6
+  version: 0.16.20
