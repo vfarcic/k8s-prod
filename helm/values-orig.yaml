@@ -22,8 +22,8 @@ chartmuseum:
       ingress.kubernetes.io/ssl-redirect: "false"
       nginx.ingress.kubernetes.io/ssl-redirect: "false"
     hosts:
-      cm.acme-escaped.com: # Change me!
-      - /
+    - name: cm.acme.com # Change me!
+      path: /  
 
 jenkins:
   master:
